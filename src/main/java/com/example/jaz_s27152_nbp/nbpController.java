@@ -18,7 +18,7 @@ public class nbpController {
     public nbpController(nbpService service) {
         this.service = service;
     }
-    @Operation(summary = "Zwraca Średnią sume kursów walut")
+    @Operation(summary = "Zwraca Średnią sume kursów walut, przyjmuje wartość days - dzień od którego zacząć, daye - dzień na którym koniec")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Znbaleziony kurs",
                     content = @Content),
